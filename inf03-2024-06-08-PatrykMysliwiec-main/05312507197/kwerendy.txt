@@ -1,0 +1,13 @@
+zap1
+SELECT imie, nazwisko FROM osoby WHERE dataUr LIKE "2%";
+
+
+zap2
+SELECT DISTINCT miasto FROM adresy ORDER by id
+
+zap3
+SELECT imie, nazwisko, numer FROM Osoby JOIN telefony on telefony.Osoby_id = Osoby.id;
+
+zap4
+ALTER TABLE adresy
+ADD COLUMN numerMieszkania INT(10) unsigned DEFAULT null AFTER numer
